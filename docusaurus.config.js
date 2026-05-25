@@ -11,7 +11,6 @@ const config = {
   url: 'https://scriptlink.rarelysimple.com/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/asl-logo.svg',
 
   organizationName: 'rarelysimple',
@@ -25,6 +24,9 @@ const config = {
   
   markdown: {
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
   },
   themes: ['@docusaurus/theme-mermaid'],
 
@@ -35,9 +37,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/rarelysimple/RarelySimple.AvatarScriptLink/tree/main/docs/',
+          editUrl: 'https://github.com/rarelysimple/rs-scriptlink-docs/tree/main/docs/',
+          includeCurrentVersion: false,
+          onlyIncludeVersions: [
+            '1.2.0'
+          ],
         },
         // blog: false,
         blog: {
@@ -102,6 +106,10 @@ const config = {
                   {
                     label: 'Data Model',
                     to: '/docs/dotnet/data-model',
+                  },
+                  {
+                    label: 'Release Notes',
+                    href: 'https://github.com/rarelysimple/RarelySimple.AvatarScriptLink/releases',
                   },
                   {
                     label: 'License',
