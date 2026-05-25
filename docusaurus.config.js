@@ -11,7 +11,6 @@ const config = {
   url: 'https://scriptlink.rarelysimple.com/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/asl-logo.svg',
 
   organizationName: 'rarelysimple',
@@ -25,6 +24,9 @@ const config = {
   
   markdown: {
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
   },
   themes: ['@docusaurus/theme-mermaid'],
 
@@ -102,6 +104,10 @@ const config = {
                   {
                     label: 'Data Model',
                     to: '/docs/dotnet/data-model',
+                  },
+                  {
+                    label: 'Release Notes',
+                    href: 'https://github.com/rarelysimple/RarelySimple.AvatarScriptLink/releases',
                   },
                   {
                     label: 'License',
