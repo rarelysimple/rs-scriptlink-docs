@@ -99,7 +99,7 @@ const sidebars = {
     {
         type: 'doc',
         id: 'dotnet/changelog/README',
-                label: 'Release Notes'
+        label: 'Release Notes'
     }
   ]
 };
