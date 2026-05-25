@@ -40,7 +40,6 @@ const config = {
           editUrl: 'https://github.com/rarelysimple/rs-scriptlink-docs/tree/main/docs/',
           includeCurrentVersion: false,
           onlyIncludeVersions: [
-            'current',
             '1.2.0'
           ],
         },
