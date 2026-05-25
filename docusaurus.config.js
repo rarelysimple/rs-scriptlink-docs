@@ -37,9 +37,12 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/rarelysimple/RarelySimple.AvatarScriptLink/tree/main/docs/',
+          editUrl: 'https://github.com/rarelysimple/rs-scriptlink-docs/tree/main/docs/',
+          includeCurrentVersion: false,
+          onlyIncludeVersions: [
+            'current',
+            '1.2.0'
+          ],
         },
         // blog: false,
         blog: {
