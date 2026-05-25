@@ -1,6 +1,6 @@
 ---
 title: AvatarScriptLink.NET Release Notes
-slug: /dotnet/release-notes
+slug: dotnet/release-notes
 image: ./Changelog.png
 ---
 
